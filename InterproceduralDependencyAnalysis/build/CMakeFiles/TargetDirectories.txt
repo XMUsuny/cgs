@@ -1,6 +1,0 @@
-/home/suny/cgs/InterproceduralDependencyAnalysis/build/CMakeFiles/intrinsics_gen.dir
-/home/suny/cgs/InterproceduralDependencyAnalysis/build/CMakeFiles/omp_gen.dir
-/home/suny/cgs/InterproceduralDependencyAnalysis/build/CMakeFiles/acc_gen.dir
-/home/suny/cgs/InterproceduralDependencyAnalysis/build/CMakeFiles/idapass.dir
-/home/suny/cgs/InterproceduralDependencyAnalysis/build/CMakeFiles/edit_cache.dir
-/home/suny/cgs/InterproceduralDependencyAnalysis/build/CMakeFiles/rebuild_cache.dir

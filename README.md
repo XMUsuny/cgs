@@ -1,40 +1,38 @@
 Concrete Constraint Guided Symbolic Execution
 =============================================================================================================
 
-Thie xxxx
+This xxxx
 
 ## Installation
-llvm 11:
-```
-XX
-```
 
-InterproceduralDependencyAnalysis module:
-```
-XX
-```
+IDA: [`Build`](InterproceduralDependencyAnalysis/README.md).
 
-klee: follow (using STP solver)
-```
-XX
-```
+KLEE: [Building KLEE](https://klee.github.io/build-llvm13/)
 
 
 
 ## Usage
 
-First, set environment variable
+First, set environment variables:
 
-
+```
 export SANDBOX_DIR=/tmp
 export SOURCE_DIR=/path-to/cgs
 export OUTPUT_DIR=/path-to/results
+```
 
-
-The following README files explains how to use Learch:
-* Obtaining the benchmarks used in the paper: [`learch/benchmarks/README.md`](learch/benchmarks/README.md).
-* Training Learch: [`learch/train/README.md`](learch/train/README.md).
-* Using Learch to test new programs: [`learch/eval/README.md`](learch/eval/README.md).
+Then, the following README files explains how to use our tool:
+* Build the benchmarks used in the paper: [`benchmark/README.md`](benchmark/README.md).
+* Generate new llvm bitcode : [`InterproceduralDependencyAnalysis/README.md`](InterproceduralDependencyAnalysis/README.md).
+* Running KLEE:
+ ```
+xxx:
+1) python3 run.py [program] gen
+xxx:
+2) python3 run.py [program] run [searcher]
+xxx:
+3) python3 run.py [program] relay_ub [searcher]
+```
 
 
 ## Citing Learch
