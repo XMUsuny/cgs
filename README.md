@@ -5,11 +5,13 @@ CGS (concrete-constraint guided searcher) is a dapendency-based path prioritizat
 
 The folder [/IDA](IDA/README.md) and [klee](klee) contains the codes to impliment our methods in Section 3 in our [paper](https://) in ICSE '24.
 
+The artifacts of motivation and experimentation can be found [here](https://).
+
 ## Installation
 
-IDA: [Installation](IDA/README.md)
+IDA: [`Installation`](IDA/README.md)
 
-KLEE: [Building KLEE](https://klee.github.io/build-llvm13/)
+KLEE: [`Building KLEE`](https://klee.github.io/build-llvm13/)
 
 
 
@@ -23,28 +25,25 @@ export SOURCE_DIR=/path-to/cgs
 export OUTPUT_DIR=/path-to/results
 ```
 
-Then, the following README files explains how to use our tool:
-* Build the benchmarks used in the paper: [`benchmark/README.md`](benchmark/README.md).
-* Generate new llvm bitcode : [`InterproceduralDependencyAnalysis/README.md`](InterproceduralDependencyAnalysis/README.md).
-* Running KLEE:
- ```
-xxx:
-1) python3 run.py [program] gen
-xxx:
-2) python3 run.py [program] run [searcher]
-xxx:
-3) python3 run.py [program] relay_ub [searcher]
+Then, generate new llvm bitcode: 
+```
+python3 run.py [program] gen
+```
+
+Last, use KLEE to test:
+```
+python3 run.py [program] run [searcher]
 ```
 
 
-## Citing Learch
+## Cite our paper
 ```
 @inproceedings{XXX,
   author = {Yue Sun, Guowei Yang, Shichao Lv, Zhi Li, Limin Sun},
   title = {Concrete Constraint Guided Symbolic Execution},
   year = {2024},
   address = {Lisbon, Portugal},
-  url = {https://doi.org/10.1145/3460120.3484813},
+  url = {https://doi.org/},
   numpages = {12},
   keywords = {symbolic execution, data dependency analysis},
   series = {ICSE '24}
