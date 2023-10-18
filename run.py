@@ -5,8 +5,9 @@ import subprocess
 
 
 
-# available searchers: dfs bfs random-state random-path cgs
-#					   nurs:depth nurs:covnew nurs:icnt nurs:rp nurs:md2u nurs:qc 
+# available searchers:
+# dfs bfs random-state random-path cgs
+# nurs:depth nurs:covnew nurs:icnt nurs:rp nurs:md2u nurs:qc 
 
 
 SOURCE_DIR = os.environ["SOURCE_DIR"]
@@ -22,7 +23,7 @@ OPTIMIZE = False
 COV_STATS = True
 
 
-# for our cgs
+# for cgs
 TARGET_BRANCH_NUM = 10
 TARGET_BRANCH_UPDATE_INSTS = 300000
 
@@ -61,7 +62,7 @@ def gen(pgm_cfg):
 
 	cmd = " ".join(["opt",
 					"-load",
-					SOURCE_DIR + "/InterproceduralDependencyAnalysis/build/libidapass.so",
+					SOURCE_DIR + "/IDA/build/libidapass.so",
 					"-ida",
 					pgm_cfg["llvm_bc"]])
 
@@ -79,13 +80,13 @@ def run(pgm_cfg, searcher):
 		os.system("rm -rf " + OUTPUT_PROG_DIR)
 	os.system("mkdir -p " + OUTPUT_DIR + "/" + searcher)
 
-	# source .bc file
+	# llvm bitcode file
 	if searcher == "cgs":
 		BC_PATH = SOURCE_DIR + "/new_benchmarks/" + pgm_cfg["name"] + ".bc"
 	else:
 		BC_PATH = pgm_cfg["llvm_bc"]
 	
-	# sandbox
+	# run in sandbox
 	SANDBOX_PROG_DIR = SANDBOX_DIR + "/sandbox-" + pgm_cfg["name"]
 	if (os.path.exists(SANDBOX_PROG_DIR)):
 		os.system("rm -rf " + SANDBOX_PROG_DIR)
