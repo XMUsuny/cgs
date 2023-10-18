@@ -25,7 +25,10 @@ export SOURCE_DIR=/path-to/cgs
 export OUTPUT_DIR=/path-to/results
 ```
 
-Then, generate new llvm bitcode: 
+Then, build program in [benchmark](/benchmark) folder.
+
+
+Next, generate new llvm bitcode:
 ```
 python3 run.py [program] gen
 ```
