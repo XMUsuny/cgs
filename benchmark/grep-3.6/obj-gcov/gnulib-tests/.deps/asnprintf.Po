@@ -1,0 +1,14 @@
+asnprintf.o: ../../gnulib-tests/asnprintf.c /usr/include/stdc-predef.h \
+ ../config.h ../../gnulib-tests/vasnprintf.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:
+
+../../gnulib-tests/vasnprintf.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h:

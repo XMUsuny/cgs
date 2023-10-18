@@ -1,0 +1,5 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x127b520 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0:\l  %1 = alloca [5 x i32], align 16\l  %2 = alloca [5 x i32], align 16\l  %3 = bitcast [5 x i32]* %1 to i8*\l  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 16 %3, i8* align 16 bitcast\l... ([5 x i32]* @__const.main.b to i8*), i64 20, i1 false)\l  %4 = bitcast [5 x i32]* %2 to i8*\l  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 16 %4, i8* align 16 bitcast\l... ([5 x i32]* @__const.main.c to i8*), i64 20, i1 false)\l  %5 = getelementptr inbounds [5 x i32], [5 x i32]* %1, i64 0, i64 0\l  %6 = getelementptr inbounds [5 x i32], [5 x i32]* %2, i64 0, i64 0\l  call void @foo(i32* %5, i32* %6, i32 5)\l  ret i32 0\l}"];
+}

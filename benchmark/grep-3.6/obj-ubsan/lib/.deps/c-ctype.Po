@@ -1,0 +1,8 @@
+c-ctype.o: ../../lib/c-ctype.c ../config.h ../../lib/c-ctype.h \
+  /home/suny/llvm-11.1.0/lib/clang/11.1.0/include/stdbool.h
+
+../config.h:
+
+../../lib/c-ctype.h:
+
+/home/suny/llvm-11.1.0/lib/clang/11.1.0/include/stdbool.h:

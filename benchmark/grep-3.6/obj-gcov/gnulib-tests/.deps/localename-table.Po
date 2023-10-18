@@ -1,0 +1,6 @@
+localename-table.o: ../../gnulib-tests/localename-table.c \
+ /usr/include/stdc-predef.h ../config.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:

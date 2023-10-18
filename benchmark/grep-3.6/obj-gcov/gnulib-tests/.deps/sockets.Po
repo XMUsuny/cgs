@@ -1,0 +1,8 @@
+sockets.o: ../../gnulib-tests/sockets.c /usr/include/stdc-predef.h \
+ ../config.h ../../gnulib-tests/sockets.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:
+
+../../gnulib-tests/sockets.h:

@@ -1,0 +1,933 @@
+# Mesajele în limba română pentru grep.
+# This file is distributed under the same license as the grep package.
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Eugen Hoanca <eugenh@urban-grafx.ro>, 2003.
+# Florentina Mușat <florentina.musat.28@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: grep 3.3.42\n"
+"Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
+"POT-Creation-Date: 2020-11-08 20:37-0800\n"
+"PO-Revision-Date: 2020-06-24 11:09+0300\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
+"Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.3.1\n"
+
+#: lib/argmatch.c:132
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "argument nevalid %s pentru %s"
+
+#: lib/argmatch.c:133
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "argument ambiguu %s pentru %s"
+
+#: lib/argmatch.c:152 lib/argmatch.h:223
+msgid "Valid arguments are:"
+msgstr "Argumentele valide sunt:"
+
+#: lib/c-stack.c:225 lib/c-stack.c:338
+msgid "program error"
+msgstr "eroare de program"
+
+#: lib/c-stack.c:226 lib/c-stack.c:339
+msgid "stack overflow"
+msgstr "supraplin de stivă"
+
+#: lib/closeout.c:122 src/grep.c:1341
+msgid "write error"
+msgstr "eroare de scriere"
+
+#: lib/dfa.c:954
+msgid "unbalanced ["
+msgstr "[ nebalansat"
+
+#: lib/dfa.c:1075
+msgid "invalid character class"
+msgstr "clasă de caractere nevalidă"
+
+#: lib/dfa.c:1201
+msgid "character class syntax is [[:space:]], not [:space:]"
+msgstr "sintaxa de clasă de caractere este [[:spațiu:]], nu [:spațiu]"
+
+#: lib/dfa.c:1268
+msgid "unfinished \\ escape"
+msgstr "\\ escape neterminat"
+
+#: lib/dfa.c:1429
+msgid "invalid content of \\{\\}"
+msgstr "\\{\\} conținut nevalid"
+
+#: lib/dfa.c:1432
+msgid "regular expression too big"
+msgstr "expresia regulată este prea mare"
+
+#: lib/dfa.c:1916
+msgid "unbalanced ("
+msgstr "( nebalansat"
+
+#: lib/dfa.c:2033
+msgid "no syntax specified"
+msgstr "nu s-a specificat nicio sintaxă"
+
+#: lib/dfa.c:2044
+msgid "unbalanced )"
+msgstr ") nebalansat"
+
+#: lib/error.c:195
+msgid "Unknown system error"
+msgstr "Eroare de sistem necunoscută"
+
+#: lib/getopt.c:278
+#, c-format
+msgid "%s: option '%s%s' is ambiguous\n"
+msgstr "%s: opțiunea „%s%s” este ambiguă\n"
+
+#: lib/getopt.c:284
+#, c-format
+msgid "%s: option '%s%s' is ambiguous; possibilities:"
+msgstr "%s: opțiunea „%s%s” este ambiguă; posibilități:"
+
+#: lib/getopt.c:319
+#, c-format
+msgid "%s: unrecognized option '%s%s'\n"
+msgstr "%s: opțiunea nerecunoscută „%s%s”\n"
+
+#: lib/getopt.c:345
+#, c-format
+msgid "%s: option '%s%s' doesn't allow an argument\n"
+msgstr "%s: opțiunea „%s%s” nu permite un argument\n"
+
+#: lib/getopt.c:360
+#, c-format
+msgid "%s: option '%s%s' requires an argument\n"
+msgstr "%s: opțiunea „%s%s” necesită un argument\n"
+
+#: lib/getopt.c:621
+#, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: opțiune nevalidă -- „%c”\n"
+
+#: lib/getopt.c:636 lib/getopt.c:682
+#, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: opțiunea necesită un argument -- „%c”\n"
+
+#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "memorie plină"
+
+#: lib/openat-die.c:38
+#, c-format
+msgid "unable to record current working directory"
+msgstr "nu s-a putut înregistra directorul de lucru curent"
+
+#: lib/openat-die.c:57
+#, c-format
+msgid "failed to return to initial working directory"
+msgstr "nu s-a putut întoarce la directorul de lucru inițial"
+
+#: lib/xbinary-io.c:37
+#, c-format
+msgid "failed to set file descriptor text/binary mode"
+msgstr "nu s-a putut stabili modul de text/binar al descriptorului de fișier"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  For example, a French Unicode local should translate
+#. these to U+00AB (LEFT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), and U+00BB (RIGHT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), respectively.
+#.
+#. If the catalog has no translation, we will try to
+#. use Unicode U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. Unicode U+2019 (RIGHT SINGLE QUOTATION MARK).  If the
+#. current locale is not Unicode, locale_quoting_style
+#. will quote 'like this', and clocale_quoting_style will
+#. quote "like this".  You should always include translations
+#. for "`" and "'" even if U+2018 and U+2019 are appropriate
+#. for your locale.
+#.
+#. If you don't know what to put here, please see
+#. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:355
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:356
+msgid "'"
+msgstr "'"
+
+#: lib/regcomp.c:135
+msgid "Success"
+msgstr "Succes"
+
+#: lib/regcomp.c:138
+msgid "No match"
+msgstr "Nu există potrivire"
+
+#: lib/regcomp.c:141
+msgid "Invalid regular expression"
+msgstr "Expresie regulată nevalidă"
+
+#: lib/regcomp.c:144
+msgid "Invalid collation character"
+msgstr "Caracter de ordine alfabetică nevalid"
+
+#: lib/regcomp.c:147
+msgid "Invalid character class name"
+msgstr "Nume de clasă de caracter nevalid"
+
+#: lib/regcomp.c:150
+msgid "Trailing backslash"
+msgstr "Linie oblică inversă de urmărire"
+
+#: lib/regcomp.c:153
+msgid "Invalid back reference"
+msgstr "Referință înapoi nevalidă"
+
+#: lib/regcomp.c:156
+msgid "Unmatched [, [^, [:, [., or [="
+msgstr "[, [^, [:, [., sau [= fără pereche"
+
+#: lib/regcomp.c:159
+msgid "Unmatched ( or \\("
+msgstr "( sau \\( fără pereche"
+
+#: lib/regcomp.c:162
+msgid "Unmatched \\{"
+msgstr "\\{ fără pereche"
+
+#: lib/regcomp.c:165
+msgid "Invalid content of \\{\\}"
+msgstr "Conținut nevalid al \\{\\}"
+
+#: lib/regcomp.c:168
+msgid "Invalid range end"
+msgstr "Sfârșit de interval nevalid"
+
+#: lib/regcomp.c:171
+msgid "Memory exhausted"
+msgstr "Memorie plină"
+
+#: lib/regcomp.c:174
+msgid "Invalid preceding regular expression"
+msgstr "Expresie regulată precedentă nevalidă"
+
+#: lib/regcomp.c:177
+msgid "Premature end of regular expression"
+msgstr "Sfârșit prematur al expresiei regulate"
+
+#: lib/regcomp.c:180
+msgid "Regular expression too big"
+msgstr "Expresie regulată prea mare"
+
+#: lib/regcomp.c:183
+msgid "Unmatched ) or \\)"
+msgstr ") sau \\) fără pereche"
+
+#: lib/regcomp.c:676
+msgid "No previous regular expression"
+msgstr "Nu există o expresie regulată anterioară"
+
+#: lib/version-etc.c:73
+#, c-format
+msgid "Packaged by %s (%s)\n"
+msgstr "Împachetat de %s (%s)\n"
+
+#: lib/version-etc.c:76
+#, c-format
+msgid "Packaged by %s\n"
+msgstr "Împachetat de %s\n"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:83
+msgid "(C)"
+msgstr "(C)"
+
+#. TRANSLATORS: The %s placeholder is the web address of the GPL license.
+#: lib/version-etc.c:88
+#, c-format
+msgid ""
+"License GPLv3+: GNU GPL version 3 or later <%s>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+msgstr ""
+"Licența GPLv3+: GNU GPL versiunea 3 sau mai mare <%s>.\n"
+"Acesta este software liber: sunteți liber să îl modificați și să îl "
+"redistribuiți.\n"
+"NU există NICIO GARANȚIE, în măsura permisă de lege.\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:105
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Scris de %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:109
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "Scris de %s și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:113
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "Scris de %s, %s și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:120
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:127
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:134
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, %s, și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:142
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, %s, %s, și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:150
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:159
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:170
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, și alții.\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:249
+#, c-format
+msgid "Report bugs to: %s\n"
+msgstr "Raportați defecțiunile la: %s\n"
+
+#: lib/version-etc.c:251
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "Raportați defecțiunile %s la: %s\n"
+
+#: lib/version-etc.c:255 lib/version-etc.c:257
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "%s pagină principală: <%s>\n"
+
+#: lib/version-etc.c:260
+#, c-format
+msgid "General help using GNU software: <%s>\n"
+msgstr "Ajutor general utilizând software GNU: <%s>\n"
+
+#: src/grep.c:648
+msgid "(standard input)"
+msgstr "(intrare standard)"
+
+#: src/grep.c:828
+msgid "invalid context length argument"
+msgstr "parametru lungime context invalid"
+
+#: src/grep.c:893
+msgid "input is too large to count"
+msgstr "intrarea(input) este prea mare pentru numărare"
+
+#: src/grep.c:1646
+#, fuzzy, c-format
+msgid "%s: binary file matches"
+msgstr "Fişierul binar %s corespunde\n"
+
+#: src/grep.c:1684
+#, fuzzy, c-format
+msgid "%s: warning: recursive directory loop"
+msgstr "buclă recursivă de directoare"
+
+#: src/grep.c:1904
+#, fuzzy, c-format
+msgid "%s: input file is also the output"
+msgstr "fișierul de intrare %s este de asemenea și ieșirea"
+
+#: src/grep.c:1966 src/grep.c:1973
+#, c-format
+msgid "Usage: %s [OPTION]... PATTERNS [FILE]...\n"
+msgstr "Utilizare: %s [OPȚIUNE]... MODELE [FIȘIER]...\n"
+
+#: src/grep.c:1968
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "Încercați „%s --help” pentru mai multe informații.\n"
+
+#: src/grep.c:1974
+#, c-format
+msgid "Search for PATTERNS in each FILE.\n"
+msgstr "Caută pentru MODELE în fiecare FIȘIER.\n"
+
+#: src/grep.c:1975
+#, c-format
+msgid ""
+"Example: %s -i 'hello world' menu.h main.c\n"
+"PATTERNS can contain multiple patterns separated by newlines.\n"
+"\n"
+"Pattern selection and interpretation:\n"
+msgstr ""
+"Exemplu: %s -i 'hello world' menu.h main.c\n"
+"MODELELE pot conține modele multiple separate prin linii noi.\n"
+"\n"
+"Selectarea modelelor și interpretarea:\n"
+
+#: src/grep.c:1980
+#, c-format
+msgid ""
+"  -E, --extended-regexp     PATTERNS are extended regular expressions\n"
+"  -F, --fixed-strings       PATTERNS are strings\n"
+"  -G, --basic-regexp        PATTERNS are basic regular expressions\n"
+"  -P, --perl-regexp         PATTERNS are Perl regular expressions\n"
+msgstr ""
+"  -E, --extended-regexp     MODELELE sunt expresii regulate extinse\n"
+"  -F, --fixed-strings       MODELELE sunt șiruri\n"
+"  -G, --basic-regexp        MODELELE sunt expresii regulate de bază\n"
+"  -P, --perl-regexp         MODELELE sunt expresii regulate PERL\n"
+
+#: src/grep.c:1986
+#, c-format
+msgid ""
+"  -e, --regexp=PATTERNS     use PATTERNS for matching\n"
+"  -f, --file=FILE           take PATTERNS from FILE\n"
+"  -i, --ignore-case         ignore case distinctions in patterns and data\n"
+"      --no-ignore-case      do not ignore case distinctions (default)\n"
+"  -w, --word-regexp         match only whole words\n"
+"  -x, --line-regexp         match only whole lines\n"
+"  -z, --null-data           a data line ends in 0 byte, not newline\n"
+msgstr ""
+"  -e, --regexp=MODELE     utilizează MODELELE pentru potrivire\n"
+"  -f, --file=FIȘIER           ia MODELELE de la FIȘIER\n"
+"  -i, --ignore-case         ignoră distincțiile de majuscule în modele și "
+"date\n"
+"      --no-ignore-case      nu ignora distincțiile de majuscule (implicit)\n"
+"  -w, --word-regexp         potrivește doar cuvinte întregi\n"
+"  -x, --line-regexp         potrivește doar linii întregi\n"
+"  -z, --null-data           o linie de date se termină în octetul 0, nu în "
+"linie nouă\n"
+
+#: src/grep.c:1994
+#, c-format
+msgid ""
+"\n"
+"Miscellaneous:\n"
+"  -s, --no-messages         suppress error messages\n"
+"  -v, --invert-match        select non-matching lines\n"
+"  -V, --version             display version information and exit\n"
+"      --help                display this help text and exit\n"
+msgstr ""
+"\n"
+"Diverse:\n"
+"  -s, --no-messages         suprimă mesajele de eroare\n"
+"  -v, --invert-match        selectează liniile care nu se potrivesc\n"
+"  -V, --version             afișează informațiile de versiune și ieși\n"
+"      --help                afișează acest text de ajutor și ieși\n"
+
+#: src/grep.c:2001
+#, c-format
+msgid ""
+"\n"
+"Output control:\n"
+"  -m, --max-count=NUM       stop after NUM selected lines\n"
+"  -b, --byte-offset         print the byte offset with output lines\n"
+"  -n, --line-number         print line number with output lines\n"
+"      --line-buffered       flush output on every line\n"
+"  -H, --with-filename       print file name with output lines\n"
+"  -h, --no-filename         suppress the file name prefix on output\n"
+"      --label=LABEL         use LABEL as the standard input file name "
+"prefix\n"
+msgstr ""
+"\n"
+"Control de ieșire:\n"
+"  -m, --max-count=NUM       oprește după NUM linii selectate\n"
+"  -b, --byte-offset        tipărește decalajul de octet cu liniile de "
+"ieșire\n"
+"  -n, --line-number         tipărește numărul liniei cu liniile de ieșire\n"
+"      --line-buffered       golește ieșirea la fiecare linie\n"
+"  -H, --with-filename       tipărește numele fișierului cu liniile de "
+"ieșire\n"
+"  -h, --no-filename         suprimă prefixul numelui de fișier la ieșire\n"
+"      --label=ETICHETĂ         utilizează ETICHETĂ ca prefixul numelui de "
+"fișier de intrare standard\n"
+
+#: src/grep.c:2012
+#, c-format
+msgid ""
+"  -o, --only-matching       show only nonempty parts of lines that match\n"
+"  -q, --quiet, --silent     suppress all normal output\n"
+"      --binary-files=TYPE   assume that binary files are TYPE;\n"
+"                            TYPE is 'binary', 'text', or 'without-match'\n"
+"  -a, --text                equivalent to --binary-files=text\n"
+msgstr ""
+"  -o, --only-matching       arată doar părțile pline ale liniilor care se "
+"potrivesc\n"
+"  -q, --quiet, --silent     suprimă toată ieșirea normală\n"
+"      --binary-files=TIP   presupune că fișierele binare sunt TIP;\n"
+"                            TIP este „binar”, „text” sau „fără-potrivire”\n"
+"  -a, --text                echivalent cu --binary-files=text\n"
+
+#: src/grep.c:2019
+#, c-format
+msgid ""
+"  -I                        equivalent to --binary-files=without-match\n"
+"  -d, --directories=ACTION  how to handle directories;\n"
+"                            ACTION is 'read', 'recurse', or 'skip'\n"
+"  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;\n"
+"                            ACTION is 'read' or 'skip'\n"
+"  -r, --recursive           like --directories=recurse\n"
+"  -R, --dereference-recursive  likewise, but follow all symlinks\n"
+msgstr ""
+"  -I                        echivalent cu --binary-files=fără-potrivire\n"
+"  -d, --directories=ACȚIUNE  cum să se manipuleze directoarele;\n"
+"                            ACȚIUNE este „citește”, „recursivitate”, sau "
+"„omite”\n"
+"  -D, --devices=ACȚIUNE      cum să se manipuleze dispozitive, FIFO-uri și "
+"socluri;\n"
+"                            ACȚIUNE este „citește” sau „omite”\n"
+"  -r, --recursive           like --directories=recursivitate\n"
+"  -R, --dereference-recursive  de asemenea, dar urmărește toate legăturile "
+"simbolice\n"
+
+#: src/grep.c:2028
+#, fuzzy, c-format
+msgid ""
+"      --include=GLOB        search only files that match GLOB (a file "
+"pattern)\n"
+"      --exclude=GLOB        skip files that match GLOB\n"
+"      --exclude-from=FILE   skip files that match any file pattern from "
+"FILE\n"
+"      --exclude-dir=GLOB    skip directories that match GLOB\n"
+msgstr ""
+"      --include=GLOB        caută doar fișiere care se potrivesc cu GLOB (un "
+"model de fișier)\n"
+"      --exclude=GLOB        omite fișierele și directoarele care se "
+"potrivesc cu GLOB\n"
+"      --exclude-from=FIȘIER   omite fișierele care se potrivesc oricărui "
+"model de la FIȘIER\n"
+"      --exclude-dir=GLOB    omite directoarele care se potrivesc cu GLOB\n"
+
+#: src/grep.c:2035
+#, c-format
+msgid ""
+"  -L, --files-without-match  print only names of FILEs with no selected "
+"lines\n"
+"  -l, --files-with-matches  print only names of FILEs with selected lines\n"
+"  -c, --count               print only a count of selected lines per FILE\n"
+"  -T, --initial-tab         make tabs line up (if needed)\n"
+"  -Z, --null                print 0 byte after FILE name\n"
+msgstr ""
+"  -L, --files-without-match  tipărește doar numele de FIȘIERE fără linii "
+"selectate\n"
+"  -l, --files-with-matches  tipărește doar numele de FIȘIERE cu linii "
+"selectate\n"
+"  -c, --count               tipărește doar un număr al liniilor selectate "
+"per FIȘIER\n"
+"  -T, --initial-tab         face ca tab-urile să fie aliniate (dacă este "
+"nevoie)\n"
+"  -Z, --null                tipărește octetul 0 după numele de FIȘIER\n"
+
+#: src/grep.c:2041
+#, c-format
+msgid ""
+"\n"
+"Context control:\n"
+"  -B, --before-context=NUM  print NUM lines of leading context\n"
+"  -A, --after-context=NUM   print NUM lines of trailing context\n"
+"  -C, --context=NUM         print NUM lines of output context\n"
+msgstr ""
+"\n"
+"Control de context:\n"
+"  -B, --before-context=NUM  tipărește NUM linii ale contextului de început\n"
+"  -A, --after-context=NUM   tipărește NUM linii ale contextului de urmărire\n"
+"  -C, --context=NUM         tipărește NUM linii al contextului de ieșire\n"
+
+#: src/grep.c:2048
+#, c-format
+msgid ""
+"  -NUM                      same as --context=NUM\n"
+"      --color[=WHEN],\n"
+"      --colour[=WHEN]       use markers to highlight the matching strings;\n"
+"                            WHEN is 'always', 'never', or 'auto'\n"
+"  -U, --binary              do not strip CR characters at EOL (MSDOS/"
+"Windows)\n"
+"\n"
+msgstr ""
+"  -NUM                      la fel ca--context=NUM\n"
+"      --color[=CÂND],\n"
+"      --colour[=CÂND]       utilizează markere pentru a evidenția șirurile "
+"care se potrivesc;\n"
+"                            CÂND este „totdeauna”, „niciodată” sau „auto”\n"
+"  -U, --binary              nu elimina caracterele CR la EOL (MSDOS/"
+"Windows)\n"
+"\n"
+
+#: src/grep.c:2055
+#, fuzzy, c-format
+msgid ""
+"When FILE is '-', read standard input.  With no FILE, read '.' if\n"
+"recursive, '-' otherwise.  With fewer than two FILEs, assume -h.\n"
+"Exit status is 0 if any line is selected, 1 otherwise;\n"
+"if any error occurs and -q is not given, the exit status is 2.\n"
+msgstr ""
+"Când FILE este „-”, citește intrarea standard.  Cu niciun FIȘIER, citește "
+"„.” dacă\n"
+"este recursiv,„-” altfel.  Cu mai puțin de două FIȘIERE, presupune -h.\n"
+"Starea de ieșire este 0 dacă orice linie (sau fișier dacă -L) este "
+"selectată, 1 altfel;\n"
+"dacă orice eroare se întâmplă -q nu este dat, starea de ieșire este 2.\n"
+
+#: src/grep.c:2097
+msgid "conflicting matchers specified"
+msgstr "conflicte între căutătorii (matchers) specificaţi"
+
+#: src/grep.c:2104
+msgid "Perl matching not supported in a --disable-perl-regexp build"
+msgstr ""
+"Potrivirea Perl nu este suportată într-o generare --disable-perl-regexp"
+
+#: src/grep.c:2106
+#, c-format
+msgid "invalid matcher %s"
+msgstr "potrivire nevalidă %s"
+
+#: src/grep.c:2541
+msgid "unknown devices method"
+msgstr "metodă dispozitive(devices) necunoscută"
+
+#: src/grep.c:2689
+msgid "invalid max count"
+msgstr "numărare maximă invalidă"
+
+#: src/grep.c:2747
+msgid "unknown binary-files type"
+msgstr "tip fişiere-binare necunoscut"
+
+#: src/grep.c:2832
+msgid ""
+"Written by Mike Haertel and others; see\n"
+"<https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>."
+msgstr ""
+"Scris de Mike Haertel și alții; consultați\n"
+"<https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>."
+
+#: src/pcresearch.c:85
+msgid "failed to allocate memory for the PCRE JIT stack"
+msgstr "nu s-a putut aloca memorie pentru stiva PCRE JIT"
+
+#: src/pcresearch.c:137
+msgid "-P supports only unibyte and UTF-8 locales"
+msgstr "-P suportă doar localizări unioctet și UTF-8"
+
+#: src/pcresearch.c:143
+msgid "the -P option only supports a single pattern"
+msgstr "opțiunea -P suportă doar un singur model"
+
+#: src/pcresearch.c:187
+msgid "internal error (should never happen)"
+msgstr "eroare internă (nu ar trebui să se întâmple vreodată)"
+
+#: src/pcresearch.c:230
+msgid "exceeded PCRE's line length limit"
+msgstr "s-a depășit limita de lungime a liniei al PCRE"
+
+#: src/pcresearch.c:306
+#, fuzzy, c-format
+msgid "%s: memory exhausted"
+msgstr "memorie plină"
+
+#: src/pcresearch.c:310
+#, fuzzy, c-format
+msgid "%s: exhausted PCRE JIT stack"
+msgstr "s-a epuizat stiva PCRE JIT"
+
+#: src/pcresearch.c:315
+#, fuzzy, c-format
+msgid "%s: exceeded PCRE's backtracking limit"
+msgstr "s-a depășit limita de backtracking al PCRE"
+
+#: src/pcresearch.c:319
+#, fuzzy, c-format
+msgid "%s: exceeded PCRE's recursion limit"
+msgstr "s-a depășit limita de backtracking al PCRE"
+
+#: src/pcresearch.c:327
+#, fuzzy, c-format
+msgid "%s: internal PCRE error: %d"
+msgstr "eroare PCRE internă: %d"
+
+#, c-format
+#~ msgid "warning: GREP_OPTIONS is deprecated; please use an alias or script"
+#~ msgstr ""
+#~ "avertisment: GREP_OPTIONS este depășit; utilizați un alias sau un script"
+
+#, c-format
+#~ msgid "warning: %s: %s"
+#~ msgstr "avertisment: %s: %s"
+
+#~ msgid "unfinished repeat count"
+#~ msgstr "numărare repetată neterminată"
+
+#~ msgid "malformed repeat count"
+#~ msgstr "numărare repetată malformată"
+
+#~ msgid "out of memory"
+#~ msgstr "memorie plină"
+
+#~ msgid "writing output"
+#~ msgstr "scriere output"
+
+#~ msgid "Usage: %s [OPTION]... PATTERN [FILE] ...\n"
+#~ msgstr "Folosire: %s [OPŢIUNE]... TIPAR [FIŞIER]...\n"
+
+#~ msgid ""
+#~ "Search for PATTERN in each FILE or standard input.\n"
+#~ "Example: %s -i 'hello world' menu.h main.c\n"
+#~ "\n"
+#~ "Regexp selection and interpretation:\n"
+#~ msgstr ""
+#~ "Caută după TIPAR în fiecare FIşIER sau de la intrare standard.\n"
+#~ "Exemplu: %s -i 'hello world' menu.h main.c\n"
+#~ "\n"
+#~ "Selecţie şi interpretare regexp:\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Output control:\n"
+#~ "  -m, --max-count=NUM       stop after NUM matches\n"
+#~ "  -b, --byte-offset         print the byte offset with output lines\n"
+#~ "  -n, --line-number         print line number with output lines\n"
+#~ "      --line-buffered       flush output on every line\n"
+#~ "  -H, --with-filename       print the filename for each match\n"
+#~ "  -h, --no-filename         suppress the prefixing filename on output\n"
+#~ "      --label=LABEL         print LABEL as filename for standard input\n"
+#~ "  -o, --only-matching       show only the part of a line matching "
+#~ "PATTERN\n"
+#~ "  -q, --quiet, --silent     suppress all normal output\n"
+#~ "      --binary-files=TYPE   assume that binary files are TYPE\n"
+#~ "                            TYPE is 'binary', 'text', or 'without-match'\n"
+#~ "  -a, --text                equivalent to --binary-files=text\n"
+#~ "  -I                        equivalent to --binary-files=without-match\n"
+#~ "  -d, --directories=ACTION  how to handle directories\n"
+#~ "                            ACTION is 'read', 'recurse', or 'skip'\n"
+#~ "  -D, --devices=ACTION      how to handle devices, FIFOs and sockets\n"
+#~ "                            ACTION is 'read' or 'skip'\n"
+#~ "  -R, -r, --recursive       equivalent to --directories=recurse\n"
+#~ "      --include=PATTERN     files that match PATTERN will be examined\n"
+#~ "      --exclude=PATTERN     files that match PATTERN will be skipped.\n"
+#~ "      --exclude-from=FILE   files that match PATTERN in FILE will be "
+#~ "skipped.\n"
+#~ "  -L, --files-without-match only print FILE names containing no match\n"
+#~ "  -l, --files-with-matches  only print FILE names containing matches\n"
+#~ "  -c, --count               only print a count of matching lines per "
+#~ "FILE\n"
+#~ "  -Z, --null                print 0 byte after FILE name\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Control ieşire (output)l:\n"
+#~ "  -m, --max-count=NUM       oprire după NUM potriviri\n"
+#~ "  -b, --byte-offset         tipăreşte locaţia (byte offset) cu liniile "
+#~ "rezultate\n"
+#~ "  -n, --line-number         tipăreşte numărul liniei cu liniile "
+#~ "rezultate\n"
+#~ "      --line-buffered       înnoieşte (flush) outputul la fiecare linie\n"
+#~ "  -H, --with-filename       tipăreşte numele de fişier care corespund\n"
+#~ "  -h, --no-filename         suprimă prefixarea cu nume de fişier la "
+#~ "output\n"
+#~ "      --label=ETICHETĂ      tipăreşte ETICHETĂ ca nume fişier pentru "
+#~ "intrare standard\n"
+#~ "  -o, --only-matching       afişează doar o parte a unei linii "
+#~ "corespunzătoare TIPARului\n"
+#~ "  -q, --quiet, --silent     suprimă tot outputul\n"
+#~ "      --binary-files=TiP    presupune ca fişierele binare sunt TIP\n"
+#~ "                            unde TIP este 'binary', 'text', sau 'without-"
+#~ "match'\n"
+#~ "  -a, --text                echivalent cu --binary-files=text\n"
+#~ "  -I                        echivalent cu --binary-files=without-match\n"
+#~ "  -d, --directories=ACŢIUNE mod de manipulare al directoarelor\n"
+#~ "                            ACŢIUNE este 'read', 'recurse', sau 'skip'\n"
+#~ "  -D, --devices=ACŢIUNE     mod de manipulare device-uri, FIFOuri şi "
+#~ "sockeţi\n"
+#~ "                            ACŢIUNE este 'read' sau 'skip'\n"
+#~ "  -R, -r, --recursive       echivalent cu --directories=recurse\n"
+#~ "      --include=TIPAR       fişierele potrivite TIPARului vor fi "
+#~ "examinate\n"
+#~ "      --exclude=TIPAR       fişierele potrivite TIPARului vor fi omise.\n"
+#~ "      --exclude-from=FIŞIER fişierele potrivite TIPARului în FIŞIER vor "
+#~ "fi omise.\n"
+#~ "  -L, --files-without-match afişează doar nume FIŞIERe care nu corespund\n"
+#~ "  -l, --files-with-matches  afişează doar nume FIŞIERe care corespund\n"
+#~ "  -c, --count               afişează doar numărul de potriviri per "
+#~ "FIŞIER\n"
+#~ "  -Z, --null                tipăreşte octet 0 după nume FIŞIER\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Context control:\n"
+#~ "  -B, --before-context=NUM  print NUM lines of leading context\n"
+#~ "  -A, --after-context=NUM   print NUM lines of trailing context\n"
+#~ "  -C, --context=NUM         print NUM lines of output context\n"
+#~ "  -NUM                      same as --context=NUM\n"
+#~ "      --color[=WHEN],\n"
+#~ "      --colour[=WHEN]       use markers to distinguish the matching "
+#~ "string\n"
+#~ "                            WHEN may be `always', `never' or `auto'.\n"
+#~ "  -U, --binary              do not strip CR characters at EOL (MSDOS)\n"
+#~ "  -u, --unix-byte-offsets   report offsets as if CRs were not there "
+#~ "(MSDOS)\n"
+#~ "\n"
+#~ "`egrep' means `grep -E'.  `fgrep' means `grep -F'.\n"
+#~ "With no FILE, or when FILE is -, read standard input.  If less than\n"
+#~ "two FILEs given, assume -h.  Exit status is 0 if match, 1 if no match,\n"
+#~ "and 2 if trouble.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Control de context:\n"
+#~ "  -B, --before-context=NUM  tipăreşte NUM linii dinainte de context\n"
+#~ "  -A, --after-context=NUM   tipăreşte NUM linii de după context\n"
+#~ "  -C, --context=NUM         tipăreşte NUM linii de context\n"
+#~ "  -NUM                      la fel ca şi --context=NUM\n"
+#~ "      --color[=CÂND],\n"
+#~ "      --colour[=CÂND]       foloseşte marcaje pentru a deosebi şirurile "
+#~ "potrivite\n"
+#~ "                            CÂND poate fi `always', `never' sau `auto'.\n"
+#~ "  -U, --binary              nu renunţa la caractere CR la EOL (MSDOS)\n"
+#~ "  -u, --unix-byte-offsets   declară offset ca şi cum CR n-ar fi "
+#~ "acolo(MSDOS)\n"
+#~ "\n"
+#~ "`egrep' înseamnă `grep -E'.  `fgrep' înseamnă `grep -F'.\n"
+#~ "Fără FIŞIER, sau când FIŞIER este -, se citeşte intrarea standard. Dacă "
+#~ "se dau\n"
+#~ "mai puţin de 2 FIŞIERe, se presupune -h. Starea de ieşire e 0 pentru\n"
+#~ "corespunzător, 1 pentru necorespunzător, şi 2 pentru probleme.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to <bug-gnu-utils@gnu.org>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Raportaţi buguri la <bug-gnu-utils@gnu.org>.\n"
+
+#~ msgid "unknown directories method"
+#~ msgstr "metodă directoare necunoscută"
+
+#~ msgid "%s (GNU grep) %s\n"
+#~ msgstr "%s (GNU grep) %s\n"
+
+#~ msgid ""
+#~ "Copyright 1988, 1992-1999, 2000, 2001 Free Software Foundation, Inc.\n"
+#~ msgstr ""
+#~ "Copyright 1988, 1992-1999, 2000, 2001 Free Software Foundation, Inc.\n"
+
+#~ msgid ""
+#~ "This is free software; see the source for copying conditions. There is "
+#~ "NO\n"
+#~ "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR "
+#~ "PURPOSE.\n"
+#~ msgstr ""
+#~ "Acesta este software liber; vedeţi sursele pentru condiţii de copiere. "
+#~ "NU\n"
+#~ "există nici o garanţie; nici măcar pentru VANDABILITATE sau POTRIVIRE\n"
+#~ "PENTRU UN SCOP ANUME.\n"
+
+#~ msgid "The -P and -z options cannot be combined"
+#~ msgstr "Opţiunile -P şi -z nu pot fi combinate"
+
+#~ msgid "%s: option `--%s' doesn't allow an argument\n"
+#~ msgstr "%s: opţiunea `--%s' nu permite un parametru\n"
+
+#~ msgid "%s: unrecognized option `--%s'\n"
+#~ msgstr "%s: opţiune necunoscută `--%s'\n"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: opţiune ilegală -- %c\n"
+
+#~ msgid "%s: option `-W %s' is ambiguous\n"
+#~ msgstr "%s: opţiunea `-W %s' este ambiguă\n"
+
+#~ msgid "%s: option `-W %s' doesn't allow an argument\n"
+#~ msgstr "%s: opţiunea `-W %s' nu permite un parametru\n"

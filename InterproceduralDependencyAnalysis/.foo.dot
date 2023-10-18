@@ -1,0 +1,14 @@
+digraph "CFG for 'foo' function" {
+	label="CFG for 'foo' function";
+
+	Node0x12745a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%3:\l  %4 = alloca i32*, align 8\l  %5 = alloca i32*, align 8\l  %6 = alloca i32, align 4\l  %7 = alloca i32, align 4\l  store i32* %0, i32** %4, align 8\l  store i32* %1, i32** %5, align 8\l  store i32 %2, i32* %6, align 4\l  store i32 1, i32* %7, align 4\l  br label %8\l}"];
+	Node0x12745a0 -> Node0x1279b30;
+	Node0x1279b30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%8:\l8:                                                \l  %9 = load i32, i32* %7, align 4\l  %10 = load i32, i32* %6, align 4\l  %11 = icmp slt i32 %9, %10\l  br i1 %11, label %12, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x1279b30:s0 -> Node0x1279b80;
+	Node0x1279b30:s1 -> Node0x1279c20;
+	Node0x1279b80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%12:\l12:                                               \l  %13 = load i32*, i32** %5, align 8\l  %14 = load i32, i32* %7, align 4\l  %15 = sext i32 %14 to i64\l  %16 = getelementptr inbounds i32, i32* %13, i64 %15\l  %17 = load i32, i32* %16, align 4\l  %18 = load i32*, i32** %4, align 8\l  %19 = load i32, i32* %7, align 4\l  %20 = sub nsw i32 %19, 1\l  %21 = sext i32 %20 to i64\l  %22 = getelementptr inbounds i32, i32* %18, i64 %21\l  %23 = load i32, i32* %22, align 4\l  %24 = add nsw i32 %17, %23\l  %25 = load i32*, i32** %4, align 8\l  %26 = load i32, i32* %7, align 4\l  %27 = sext i32 %26 to i64\l  %28 = getelementptr inbounds i32, i32* %25, i64 %27\l  store i32 %24, i32* %28, align 4\l  br label %29\l}"];
+	Node0x1279b80 -> Node0x1279bd0;
+	Node0x1279bd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%29:\l29:                                               \l  %30 = load i32, i32* %7, align 4\l  %31 = add nsw i32 %30, 1\l  store i32 %31, i32* %7, align 4\l  br label %8, !llvm.loop !2\l}"];
+	Node0x1279bd0 -> Node0x1279b30;
+	Node0x1279c20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%32:\l32:                                               \l  ret void\l}"];
+}

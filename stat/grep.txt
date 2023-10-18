@@ -1,0 +1,8 @@
+[BDA] identify 276 switches, 2482/4742 target/total branches, global_var: 64, local_var: 318, non_pointer_param: 448, struct_pointer_param: 667
+[BDA] extract branch dependency takes: 11031
+[IDA] Valid StoreInst: 5421/8724, ReturnInst: 40/602
+[IDA] Find useful store instructions takes: 1105
+[IDA] Find 29 unique condition-dependent struct types
+[IDA] Find 128 unique condition-dependent struct variables
+[IDA] Find 1270 branch-related store instructions for 1029 branches
+[IDA] Find store instruction for branch instruction takes: 6880

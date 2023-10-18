@@ -1,0 +1,726 @@
+# This file is distributed under the same license as the grep package.
+# Estonian translations for grep
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Toomas Soome <tsoome@me.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: grep 3.5.16\n"
+"Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
+"POT-Creation-Date: 2020-11-08 20:37-0800\n"
+"PO-Revision-Date: 2020-11-04 12:48+0200\n"
+"Last-Translator: Toomas Soome <tsoome@me.com>\n"
+"Language-Team: Estonian <linux-ee@lists.eenet.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+
+#: lib/argmatch.c:132
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "vigane argument %s võtmele %s"
+
+#: lib/argmatch.c:133
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "segane argument %s võtmele %s"
+
+#: lib/argmatch.c:152 lib/argmatch.h:223
+msgid "Valid arguments are:"
+msgstr "Lubatud argumendid on:"
+
+#: lib/c-stack.c:225 lib/c-stack.c:338
+msgid "program error"
+msgstr "programmi viga"
+
+#: lib/c-stack.c:226 lib/c-stack.c:339
+msgid "stack overflow"
+msgstr "pinu ületäitumine"
+
+#: lib/closeout.c:122 src/grep.c:1341
+msgid "write error"
+msgstr "viga kirjutamisel"
+
+#: lib/dfa.c:954
+msgid "unbalanced ["
+msgstr "balanseerimata ["
+
+#: lib/dfa.c:1075
+msgid "invalid character class"
+msgstr "vigane sümboliklass"
+
+#: lib/dfa.c:1201
+msgid "character class syntax is [[:space:]], not [:space:]"
+msgstr "sümbolklassi süntaks on [[:space:]], mitte [:space:]"
+
+#: lib/dfa.c:1268
+msgid "unfinished \\ escape"
+msgstr "lõpetamata \\ paojada"
+
+#: lib/dfa.c:1429
+msgid "invalid content of \\{\\}"
+msgstr "vigane \\{\\} sisu"
+
+#: lib/dfa.c:1432
+msgid "regular expression too big"
+msgstr "regulaaravaldis on liiga suur"
+
+#: lib/dfa.c:1916
+msgid "unbalanced ("
+msgstr "balanseerimata ("
+
+#: lib/dfa.c:2033
+msgid "no syntax specified"
+msgstr "süntaksit pole määratud"
+
+#: lib/dfa.c:2044
+msgid "unbalanced )"
+msgstr "balanseerimata )"
+
+#: lib/error.c:195
+msgid "Unknown system error"
+msgstr "Tundmatu süsteemi viga"
+
+#: lib/getopt.c:278
+#, c-format
+msgid "%s: option '%s%s' is ambiguous\n"
+msgstr "%s: võti '%s%s' on segane\n"
+
+#: lib/getopt.c:284
+#, c-format
+msgid "%s: option '%s%s' is ambiguous; possibilities:"
+msgstr "%s: võti '%s%s' on segane; võimalused:"
+
+#: lib/getopt.c:319
+#, c-format
+msgid "%s: unrecognized option '%s%s'\n"
+msgstr "%s: tundmatu võti '%s%s'\n"
+
+#: lib/getopt.c:345
+#, c-format
+msgid "%s: option '%s%s' doesn't allow an argument\n"
+msgstr "%s: võti '%s%s' ei luba argumenti\n"
+
+#: lib/getopt.c:360
+#, c-format
+msgid "%s: option '%s%s' requires an argument\n"
+msgstr "%s: võti '%s%s' nõuab argumenti\n"
+
+#: lib/getopt.c:621
+#, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: vigane võti -- '%c'\n"
+
+#: lib/getopt.c:636 lib/getopt.c:682
+#, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: võti nõuab argumenti -- '%c'\n"
+
+#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "mälu on otsas"
+
+#: lib/openat-die.c:38
+#, c-format
+msgid "unable to record current working directory"
+msgstr "ei õnnestu salvestada jooksvat töökataloogi"
+
+#: lib/openat-die.c:57
+#, c-format
+msgid "failed to return to initial working directory"
+msgstr "algsesse töökataloogi ei saa tagasi minna"
+
+#: lib/xbinary-io.c:37
+#, c-format
+msgid "failed to set file descriptor text/binary mode"
+msgstr "failipideme tekst/binaar moodi muutmine ebaõnnestus"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  For example, a French Unicode local should translate
+#. these to U+00AB (LEFT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), and U+00BB (RIGHT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), respectively.
+#.
+#. If the catalog has no translation, we will try to
+#. use Unicode U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. Unicode U+2019 (RIGHT SINGLE QUOTATION MARK).  If the
+#. current locale is not Unicode, locale_quoting_style
+#. will quote 'like this', and clocale_quoting_style will
+#. quote "like this".  You should always include translations
+#. for "`" and "'" even if U+2018 and U+2019 are appropriate
+#. for your locale.
+#.
+#. If you don't know what to put here, please see
+#. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:355
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:356
+msgid "'"
+msgstr "'"
+
+#: lib/regcomp.c:135
+msgid "Success"
+msgstr "Edukas"
+
+#: lib/regcomp.c:138
+msgid "No match"
+msgstr "Vastet pole"
+
+#: lib/regcomp.c:141
+msgid "Invalid regular expression"
+msgstr "Vigane regulaaravaldis"
+
+#: lib/regcomp.c:144
+msgid "Invalid collation character"
+msgstr "Vigane sortimise sümbol"
+
+#: lib/regcomp.c:147
+msgid "Invalid character class name"
+msgstr "Vigane sümbolklassi nimi"
+
+#: lib/regcomp.c:150
+msgid "Trailing backslash"
+msgstr "Lõpetav langkriips"
+
+#: lib/regcomp.c:153
+msgid "Invalid back reference"
+msgstr "Vigane tagasi viide"
+
+#: lib/regcomp.c:156
+msgid "Unmatched [, [^, [:, [., or [="
+msgstr "Puudub [, [^, [:, [. või [= paariline"
+
+#: lib/regcomp.c:159
+msgid "Unmatched ( or \\("
+msgstr "Puudub ( või \\("
+
+#: lib/regcomp.c:162
+msgid "Unmatched \\{"
+msgstr "Puudub \\{"
+
+#: lib/regcomp.c:165
+msgid "Invalid content of \\{\\}"
+msgstr "Vigane \\{\\} sisu"
+
+#: lib/regcomp.c:168
+msgid "Invalid range end"
+msgstr "Vigane vahemiku lõpp"
+
+#: lib/regcomp.c:171
+msgid "Memory exhausted"
+msgstr "Mälu on otsas"
+
+#: lib/regcomp.c:174
+msgid "Invalid preceding regular expression"
+msgstr "Vigane eelnev regulaaravaldis"
+
+#: lib/regcomp.c:177
+msgid "Premature end of regular expression"
+msgstr "Ootamatu reagulaaravaldise lõpp"
+
+#: lib/regcomp.c:180
+msgid "Regular expression too big"
+msgstr "Regulaaravaldis on liiga suur"
+
+#: lib/regcomp.c:183
+msgid "Unmatched ) or \\)"
+msgstr "Puudub ) või \\)"
+
+#: lib/regcomp.c:676
+msgid "No previous regular expression"
+msgstr "Eelnevat regulaaravaldist pole"
+
+#: lib/version-etc.c:73
+#, c-format
+msgid "Packaged by %s (%s)\n"
+msgstr "Pakendanud %s (%s)\n"
+
+#: lib/version-etc.c:76
+#, c-format
+msgid "Packaged by %s\n"
+msgstr "Pakendanud %s\n"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:83
+msgid "(C)"
+msgstr "©"
+
+#. TRANSLATORS: The %s placeholder is the web address of the GPL license.
+#: lib/version-etc.c:88
+#, c-format
+msgid ""
+"License GPLv3+: GNU GPL version 3 or later <%s>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+msgstr ""
+"Litsents GPLv3+: GNU GPL versioon 3 või uuem <%s>\n"
+"See on vaba tarkvara: teil on lubatud seda muuta ja levitada.\n"
+"Garantii PUUDUB; vastavalt seadustega lubatud piiridele.\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:105
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Kirjutanud %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:109
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "Kirjutanud %s ja %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:113
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "Kirjutanud %s, %s, ja %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:120
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Kirjutanud %s, %s, %s,\n"
+"ja %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:127
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Kirjutanud %s, %s, %s,\n"
+"%s, ja %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:134
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"Kirjutanud %s, %s, %s,\n"
+"%s, %s, ja %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:142
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"Kirjuatanud %s, %s, %s,\n"
+"%s, %s, %s, ja %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:150
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Kirjutanud %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"ja %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:159
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Kirjutanud %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, ja %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:170
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"Kirjutanud %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, ja teised.\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:249
+#, c-format
+msgid "Report bugs to: %s\n"
+msgstr "Teatage palun vigadest: %s\n"
+
+#: lib/version-etc.c:251
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "Teatage palun %s vigadest: %s\n"
+
+#: lib/version-etc.c:255 lib/version-etc.c:257
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "%s koduleht: <%s>\n"
+
+#: lib/version-etc.c:260
+#, c-format
+msgid "General help using GNU software: <%s>\n"
+msgstr "Üldine abiinfo GNU tarkvara kohta: <%s>\n"
+
+#: src/grep.c:648
+msgid "(standard input)"
+msgstr "(standardsisend)"
+
+#: src/grep.c:828
+msgid "invalid context length argument"
+msgstr "vigane konteksti pikkuse argument"
+
+#: src/grep.c:893
+msgid "input is too large to count"
+msgstr "sisend on loendamiseks liiga suur"
+
+#: src/grep.c:1646
+#, c-format
+msgid "%s: binary file matches"
+msgstr "%s: binaarfail sobib"
+
+#: src/grep.c:1684
+#, c-format
+msgid "%s: warning: recursive directory loop"
+msgstr "%s: hoiatus: rekursiivne kataloogipuu tsükkel"
+
+#: src/grep.c:1904
+#, c-format
+msgid "%s: input file is also the output"
+msgstr "%s: sisendfail on ühtlasi ka väljund"
+
+#: src/grep.c:1966 src/grep.c:1973
+#, c-format
+msgid "Usage: %s [OPTION]... PATTERNS [FILE]...\n"
+msgstr "Kasutamine: %s [VÕTI]... MUSTRID [FAIL] ...\n"
+
+#: src/grep.c:1968
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "Lisainfo saamiseks proovige võtit '%s --help'.\n"
+
+#: src/grep.c:1974
+#, c-format
+msgid "Search for PATTERNS in each FILE.\n"
+msgstr "Otsi MUSTREID igast FAIList.\n"
+
+#: src/grep.c:1975
+#, c-format
+msgid ""
+"Example: %s -i 'hello world' menu.h main.c\n"
+"PATTERNS can contain multiple patterns separated by newlines.\n"
+"\n"
+"Pattern selection and interpretation:\n"
+msgstr ""
+"Näiteks: %s -i 'tere kõik' menu.h main.c\n"
+"MUSTRID võivad sisaldada mitut reavahetusega eraldatud mustrit.\n"
+"\n"
+"Mustri valik ja interpreteerimine:\n"
+
+#: src/grep.c:1980
+#, c-format
+msgid ""
+"  -E, --extended-regexp     PATTERNS are extended regular expressions\n"
+"  -F, --fixed-strings       PATTERNS are strings\n"
+"  -G, --basic-regexp        PATTERNS are basic regular expressions\n"
+"  -P, --perl-regexp         PATTERNS are Perl regular expressions\n"
+msgstr ""
+"  -E, --extended-regexp     MUSTRID on laiendatud regulaaravaldised\n"
+"  -F, --fixed-strings       MUSTRID on hulk reavahetustega eraldatud "
+"sõnesid\n"
+"  -G, --basic-regexp        MUSTRID on lihtsad regulaaravaldised "
+"(vaikimisi)\n"
+"  -P, --perl-regexp         MUSTRID on Perl regulaaravaldised\n"
+
+#: src/grep.c:1986
+#, c-format
+msgid ""
+"  -e, --regexp=PATTERNS     use PATTERNS for matching\n"
+"  -f, --file=FILE           take PATTERNS from FILE\n"
+"  -i, --ignore-case         ignore case distinctions in patterns and data\n"
+"      --no-ignore-case      do not ignore case distinctions (default)\n"
+"  -w, --word-regexp         match only whole words\n"
+"  -x, --line-regexp         match only whole lines\n"
+"  -z, --null-data           a data line ends in 0 byte, not newline\n"
+msgstr ""
+"  -e, --regexp=MUSTER       kasuta regulaaravaldistena\n"
+"  -f, --file=FAIL           loe MUSTRID failist FAIL\n"
+"  -i, --ignore-case         tõstutundetu\n"
+"      --no-ignore-case      tõstutundlik (vaikimisi)\n"
+"  -w, --word-regexp         kasuta MUSTRIT sõnade leidmiseks\n"
+"  -x, --line-regexp         kasuta MUSTRIT ridade leidmiseks\n"
+"  -z, --null-data           andmerida lõppeb baidil 0, mitte reavahetusel\n"
+
+#: src/grep.c:1994
+#, c-format
+msgid ""
+"\n"
+"Miscellaneous:\n"
+"  -s, --no-messages         suppress error messages\n"
+"  -v, --invert-match        select non-matching lines\n"
+"  -V, --version             display version information and exit\n"
+"      --help                display this help text and exit\n"
+msgstr ""
+"\n"
+"Muud:\n"
+"  -s, --no-messages         blokeeri veateated\n"
+"  -v, --invert-match        vali mitte-sobivad read\n"
+"  -V, --version             esita versiooniinfo ja lõpeta töö\n"
+"      --help                esita see abiinfo ja lõpeta töö\n"
+"\n"
+
+#: src/grep.c:2001
+#, c-format
+msgid ""
+"\n"
+"Output control:\n"
+"  -m, --max-count=NUM       stop after NUM selected lines\n"
+"  -b, --byte-offset         print the byte offset with output lines\n"
+"  -n, --line-number         print line number with output lines\n"
+"      --line-buffered       flush output on every line\n"
+"  -H, --with-filename       print file name with output lines\n"
+"  -h, --no-filename         suppress the file name prefix on output\n"
+"      --label=LABEL         use LABEL as the standard input file name "
+"prefix\n"
+msgstr ""
+"\n"
+"Väljundi kontroll:\n"
+"  -m, --max-count=NUM       peatu peale NUM rida\n"
+"  -b, --byte-offset         väljasta koos ridadega ka baidi indeks\n"
+"  -n, --line-number         väljasta koos ridadega ka reanumber\n"
+"      --line-buffered       tühjenda väljund igal real\n"
+"  -H, --with-filename       väljasta iga leiuga failinimi\n"
+"  -h, --no-filename         blokeeri väljundis failinimi\n"
+"      --label=MÄRGEND       kasuta väljundis failinime asemel märgendit\n"
+
+#: src/grep.c:2012
+#, c-format
+msgid ""
+"  -o, --only-matching       show only nonempty parts of lines that match\n"
+"  -q, --quiet, --silent     suppress all normal output\n"
+"      --binary-files=TYPE   assume that binary files are TYPE;\n"
+"                            TYPE is 'binary', 'text', or 'without-match'\n"
+"  -a, --text                equivalent to --binary-files=text\n"
+msgstr ""
+"  -o, --only-matching       näita ainult mustriga sobivat mittetühja reaosa\n"
+"  -q, --quiet, --silent     blokeeri kogu tavaline väljund\n"
+"      --binary-files=TÜÜP   eelda binaarfailide tüüpi;\n"
+"                            TÜÜP on 'binary', 'text', või 'without-match'\n"
+"  -a, --text                sama, kui --binary-files=text\n"
+
+#: src/grep.c:2019
+#, c-format
+msgid ""
+"  -I                        equivalent to --binary-files=without-match\n"
+"  -d, --directories=ACTION  how to handle directories;\n"
+"                            ACTION is 'read', 'recurse', or 'skip'\n"
+"  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;\n"
+"                            ACTION is 'read' or 'skip'\n"
+"  -r, --recursive           like --directories=recurse\n"
+"  -R, --dereference-recursive  likewise, but follow all symlinks\n"
+msgstr ""
+"  -I                        sama, kui --binary-files=without-match\n"
+"  -d, --directories=TEGEVUS kuidas käsitleda katalooge;\n"
+"                            TEGEVUS on 'read', 'recurse' või 'skip'\n"
+"  -D, --devices=TEGEVUS     kuidas käsitleda seadmeid, FIFOsid ja "
+"pistikuid;\n"
+"                            TEGEVUS on 'read' või 'skip'\n"
+"  -r, --recursive           sama, kui --directories=recurse\n"
+"  -R                        sama, aga järgib kõiki nimeviiteid\n"
+
+#: src/grep.c:2028
+#, c-format
+msgid ""
+"      --include=GLOB        search only files that match GLOB (a file "
+"pattern)\n"
+"      --exclude=GLOB        skip files that match GLOB\n"
+"      --exclude-from=FILE   skip files that match any file pattern from "
+"FILE\n"
+"      --exclude-dir=GLOB    skip directories that match GLOB\n"
+msgstr ""
+"      --include=FAILI_MUSTER  otsi alinult mustrile vastavaid faile\n"
+"      --exclude=FAILI_MUSTER  välista mustrile vastavad failid\n"
+"      --exclude-from=FAIL    välista failid vastavalt failist loetud "
+"mustrile\n"
+"      --exclude-dir=MUSTER   välista mustrile vastavad kataloogid.\n"
+
+#: src/grep.c:2035
+#, c-format
+msgid ""
+"  -L, --files-without-match  print only names of FILEs with no selected "
+"lines\n"
+"  -l, --files-with-matches  print only names of FILEs with selected lines\n"
+"  -c, --count               print only a count of selected lines per FILE\n"
+"  -T, --initial-tab         make tabs line up (if needed)\n"
+"  -Z, --null                print 0 byte after FILE name\n"
+msgstr ""
+"  -L, --files-without-match  väljasta ainult failide nimed, mis ei sobinud\n"
+"  -l, --files-with-matches  väljasta ainult leitud failide nimed\n"
+"  -c, --count               väljasta ainult leitud ridade arv faili kohta\n"
+"  -T, --initial-tab         kasuta vajadusel ridade joondamisel "
+"tabulaatorit\n"
+"  -Z, --null                väljasta faili nime järel bait 0\n"
+
+#: src/grep.c:2041
+#, c-format
+msgid ""
+"\n"
+"Context control:\n"
+"  -B, --before-context=NUM  print NUM lines of leading context\n"
+"  -A, --after-context=NUM   print NUM lines of trailing context\n"
+"  -C, --context=NUM         print NUM lines of output context\n"
+msgstr ""
+"\n"
+"Konteksti kontroll:\n"
+"  -B, --before-context=NUM  väljasta NUM rida eelnevat konteksti\n"
+"  -A, --after-context=NUM   väljasta NUM rida järgnevat konteksti\n"
+"  -C, --context=NUM         väljasta NUM rida väljundi konteksti\n"
+
+#: src/grep.c:2048
+#, c-format
+msgid ""
+"  -NUM                      same as --context=NUM\n"
+"      --color[=WHEN],\n"
+"      --colour[=WHEN]       use markers to highlight the matching strings;\n"
+"                            WHEN is 'always', 'never', or 'auto'\n"
+"  -U, --binary              do not strip CR characters at EOL (MSDOS/"
+"Windows)\n"
+"\n"
+msgstr ""
+"  -NUM                      sama, kui --context=NUM\n"
+"      --color[=MILLAL],\n"
+"      --colour[=MILLAL]     kasuta otsitava sõne eristamiseks markereid\n"
+"                            MILLAL võib olla 'always', 'never' või 'auto'.\n"
+"  -U, --binary              ära eemalda rea lõpust CR sümboleid (MSDOS/"
+"WINDOWS)\n"
+"\n"
+
+#: src/grep.c:2055
+#, c-format
+msgid ""
+"When FILE is '-', read standard input.  With no FILE, read '.' if\n"
+"recursive, '-' otherwise.  With fewer than two FILEs, assume -h.\n"
+"Exit status is 0 if any line is selected, 1 otherwise;\n"
+"if any error occurs and -q is not given, the exit status is 2.\n"
+msgstr ""
+"Kui fail on '-', loe standardsisendit. Kui faili ei antud ja kasutati võtit -"
+"r,\n"
+"loe '.', muidu '-'. Kui anti vähem kui kaks faili, eelda -h. \n"
+"Lõpetamise kood on 0, kui rida leiti, muidu 1;\n"
+"kui tekkis viga ja -q ei kasutatud, on lõpetamise kood 2.\n"
+
+#: src/grep.c:2097
+msgid "conflicting matchers specified"
+msgstr "määrati konfliktsed otsijad"
+
+#: src/grep.c:2104
+msgid "Perl matching not supported in a --disable-perl-regexp build"
+msgstr ""
+"Perl regulaaravaldisi ei toetata --disable-perl-regexp kompileerimise võtmega"
+
+#: src/grep.c:2106
+#, c-format
+msgid "invalid matcher %s"
+msgstr "vigane sobitaja %s"
+
+#: src/grep.c:2541
+msgid "unknown devices method"
+msgstr "tundmatu seadmete meetod"
+
+#: src/grep.c:2689
+msgid "invalid max count"
+msgstr "vigane maksimum"
+
+#: src/grep.c:2747
+msgid "unknown binary-files type"
+msgstr "tundmatu kahendfailide tüüp"
+
+#: src/grep.c:2832
+msgid ""
+"Written by Mike Haertel and others; see\n"
+"<https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>."
+msgstr ""
+"Kirjutanud Mike Haertel ja teised; vaadake\n"
+"<https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>."
+
+#: src/pcresearch.c:85
+msgid "failed to allocate memory for the PCRE JIT stack"
+msgstr "PCRE JIT magasini jaoks ei jätku mälu"
+
+#: src/pcresearch.c:137
+msgid "-P supports only unibyte and UTF-8 locales"
+msgstr "-P toetab ainult ühebaidilisi ja UTF-8 lokaate"
+
+#: src/pcresearch.c:143
+msgid "the -P option only supports a single pattern"
+msgstr "võti -P toetab ainult ühte mustrit"
+
+#: src/pcresearch.c:187
+msgid "internal error (should never happen)"
+msgstr "sisemine viga (ei peaks kunagi juhtuma)"
+
+#: src/pcresearch.c:230
+msgid "exceeded PCRE's line length limit"
+msgstr "PCRE rea pikkuse piirang on ületatud"
+
+#: src/pcresearch.c:306
+#, c-format
+msgid "%s: memory exhausted"
+msgstr "%s: mälu on otsas"
+
+#: src/pcresearch.c:310
+#, c-format
+msgid "%s: exhausted PCRE JIT stack"
+msgstr "%s: PCRE JIT pinu sai täis"
+
+#: src/pcresearch.c:315
+#, c-format
+msgid "%s: exceeded PCRE's backtracking limit"
+msgstr "%s: PCRE tagasivaate piirang on ületatud"
+
+#: src/pcresearch.c:319
+#, c-format
+msgid "%s: exceeded PCRE's recursion limit"
+msgstr "%s: PCRE rekursiooni piirang on ületatud"
+
+#: src/pcresearch.c:327
+#, c-format
+msgid "%s: internal PCRE error: %d"
+msgstr "%s: sisemine PCRE viga: %d"

@@ -1,0 +1,19 @@
+objcopy##${SOURCE_DIR}/benchmark/binutils-2.36/obj-llvm/binutils/objcopy.bc##${SOURCE_DIR}/benchmark/binutils-2.36/obj-ubsan/binutils/objcopy.bc##--sym-args 0 3 20 A --sym-files 1 100 --sym-stdout
+
+readelf##${SOURCE_DIR}/benchmark/binutils-2.36/obj-llvm/binutils/readelf.bc##${SOURCE_DIR}/benchmark/binutils-2.36/obj-ubsan/binutils/readelf.bc##-a A --sym-files 1 100 --sym-stdout
+
+grep##${SOURCE_DIR}/benchmark/grep-3.6/obj-llvm/src/grep.bc##${SOURCE_DIR}/benchmark/grep-3.6/obj-ubsan/src/grep.bc##--sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout
+
+make##${SOURCE_DIR}/benchmark/make-4.3/obj-llvm/make.bc##${SOURCE_DIR}/benchmark/make-4.3/obj-ubsan/make.bc##-n -f A --sym-files 1 40 --sym-stdout
+
+gawk##${SOURCE_DIR}/benchmark/gawk-5.1.0/obj-llvm/gawk.bc##${SOURCE_DIR}/benchmark/gawk-5.1.0/obj-ubsan/gawk.bc##-f A B --sym-files 2 50 --sym-stdout
+
+sqlite3##${SOURCE_DIR}/benchmark/sqlite3/obj-llvm/sqlite3.bc##${SOURCE_DIR}/benchmark/sqlite3/obj-ubsan/sqlite3.bc##--sym-stdin 20 --sym-stdout
+
+sed##${SOURCE_DIR}/benchmark/sed-4.8/obj-llvm/sed/sed.bc##${SOURCE_DIR}/benchmark/sed-4.8/obj-ubsan/sed/sed.bc##--sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout
+
+nasm##${SOURCE_DIR}/benchmark/nasm-2.15.05/obj-llvm/nasm.bc##${SOURCE_DIR}/benchmark/nasm-2.15.05/obj-ubsan/nasm.bc##--sym-args 0 2 2 A --sym-files 1 100 --sym-stdout
+
+expat##${SOURCE_DIR}/benchmark/expat-2.5.0/obj-llvm/harness/expat.bc##${SOURCE_DIR}/benchmark/expat-2.5.0/obj-ubsan/harness/expat.bc##--sym-stdin 100 --sym-stdout
+
+xmlparse##${SOURCE_DIR}/benchmark/libxml2-2.10.3/obj-llvm/harness/xmlparse.bc##${SOURCE_DIR}/benchmark/libxml2-2.10.3/obj-ubsan/harness/xmlparse.bc##A --sym-files 1 40 --sym-stdout
