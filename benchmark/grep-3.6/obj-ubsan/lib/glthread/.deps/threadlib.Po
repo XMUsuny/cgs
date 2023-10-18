@@ -1,3 +1,0 @@
-glthread/threadlib.o: ../../lib/glthread/threadlib.c ../config.h
-
-../config.h:
