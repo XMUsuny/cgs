@@ -33,7 +33,7 @@ Next, generate new llvm bitcode:
 python3 run.py [program] gen
 ```
 
-Last, use KLEE to test:
+Last, use our KLEE to test:
 ```
 python3 run.py [program] run [searcher]
 ```
