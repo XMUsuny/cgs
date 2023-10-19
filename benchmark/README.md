@@ -10,7 +10,7 @@ prepare.sh: download and build steps for each program
 
 xmlparse.c: a fuzz harness downloaded from official website for testing libxml2 library
 
-# New program
+## New program
 
 There are three steps to add new a program:
 
