@@ -16,6 +16,6 @@ There are three steps to add new a program:
 
 1. download the source code.
 
-2. add configurations to [config.txt](/benchmark/config.txt).
+2. add program configurations to [config.txt](/benchmark/config.txt).
 
-3. build the program accoring to [prepare.sh](prepare.sh).
+3. build the program following [prepare.sh](prepare.sh).
