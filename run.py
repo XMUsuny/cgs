@@ -20,7 +20,7 @@ OPTIMIZE = False
 
 # set COV_STATS = True, and use "random-path" on command line,
 # to get the coverage for symbolic/concrete branch.
-COV_STATS = True
+COV_STATS = False
 
 
 # for cgs
