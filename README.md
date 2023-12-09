@@ -5,7 +5,7 @@ CGS (concrete-constraint guided searcher) is a dapendency-based path prioritizat
 
 The folder [IDA](IDA/README.md) and [KLEE](klee) contains the codes to impliment our methods in Section 3 in our [paper](https://) in ICSE '24.
 
-The artifacts of motivation and experimentation can be found [here](https://).
+The artifacts of motivation and experimentation can be found [here](https://zenodo.org/records/10020236).
 
 ## Installation
 
