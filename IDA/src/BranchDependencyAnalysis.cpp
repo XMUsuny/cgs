@@ -303,7 +303,6 @@ ida::DataDepSet ida::BranchDependencyAnalysis::extractDataDependency(
                 if (CI) {
                     offset = CI->getZExtValue();
                     // offset = 8 * CI->getZExtValue();
-                    // offset += handleStructBit(GEP); 
                 }
                 else
                     offset = -1;
@@ -650,62 +649,6 @@ bool ida::BranchDependencyAnalysis::isEqualStructPointerList(
     }
     return true;
 }
-
-/*
-unsigned ida::BranchDependencyAnalysis::handleStructBit(Instruction *inst) {
-    unsigned offset = 0;
-    bool _and = false, _lshr = false;       // execute add or lshr one time 
-    std::list<Instruction *> to_trace_insts;
-    std::list<std::string> allowed_insts = {"load", "and", "lshr", "bitcast"};
-
-    to_trace_insts.push_back(inst);
-    while(!to_trace_insts.empty()) {
-        Instruction *I = to_trace_insts.back();
-        to_trace_insts.pop_back();
-        // outs() << *I << "\n";
-
-        std::string i_str = I->getOpcodeName();
-        if (i_str == "and" && !_and) {
-            _and = true;
-            Value *v = I->getOperand(1);
-            auto *CI = dyn_cast<ConstantInt>(v);
-            if (CI) {
-                int c = CI->getSExtValue(); // int..
-                if (c > 0) {
-                    while((c & 1) == 0) {      // 2: 00000010
-                        offset += 1;
-                        c = c >> 1;
-                    }
-                }
-                else {
-                    while((c & 1) == 1) {      // -3: 11111101
-                        offset += 1;
-                        c = c >> 1;
-                    }
-                }
-            }
-        }
-        if (i_str == "lshr" && !_lshr) {
-            _lshr = true;
-            Value *v = I->getOperand(1);
-            auto *CI = dyn_cast<ConstantInt>(v);
-            if (CI) {
-                offset += CI->getZExtValue();
-            }
-        }
-
-        for (auto *U :I->users()) {
-            if (auto *next_inst = dyn_cast<Instruction>(U)) {
-                std::string _i_str = next_inst->getOpcodeName();
-                if (std::find(allowed_insts.begin(), allowed_insts.end(), _i_str) != allowed_insts.end()) {
-                    to_trace_insts.push_back(next_inst);       
-                }
-            }
-        }
-    }
-
-    return offset;
-}*/
 
 
 int ida::BranchDependencyAnalysis::getBBLabel(BasicBlock * BB) {
