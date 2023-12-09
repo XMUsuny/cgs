@@ -48,11 +48,6 @@ python3 run.py [program] run [searcher]
   address = {Lisbon, Portugal},
   url = {https://doi.org/xxx},
   numpages = {12},
-  keywords = {symbolic execution, data dependency analysis},
   series = {ICSE '24}
 }
 ```
-
-
-## License
-The KLEE code uses [KLEE License](klee/LICENSE.txt) and our code uses [GNU](xxx).
