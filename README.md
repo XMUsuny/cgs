@@ -9,9 +9,11 @@ The artifacts of motivation and experimentation can be found [here](https://).
 
 ## Installation
 
-Branch dependency analysis: [`Installation`](IDA/README.md)
+Install LLVM 11.1.0 first and build: 
 
-KLEE (using STP solver): [`Building KLEE`](https://klee.github.io/build-llvm13/)
+1) Branch dependency analysis: [`Installation`](IDA/README.md)
+
+2) KLEE (using STP solver): [`Building KLEE`](https://klee.github.io/build-llvm13/)
 
 
 
