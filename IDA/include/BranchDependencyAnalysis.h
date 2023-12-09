@@ -80,7 +80,6 @@ namespace ida {
 			std::unordered_map<llvm::Function *, BranchDepSet> FuncBranchDeps;
 			
 			int getBBLabel(llvm::BasicBlock * BB);
-			// unsigned handleStructBit(llvm::Instruction *inst);
 
 			llvm::StoreInst *selectStoreInst(std::vector<llvm::StoreInst *> Froms, \
 											llvm::Instruction *To, \
