@@ -3,7 +3,7 @@ Concrete Constraint Guided Symbolic Execution
 
 CGS (concrete-constraint guided searcher) is a dapendency-based path prioritization method for symbolic execution. It is motivated by an important observation that concrete branching conditions encompass a significant majority and a large portion of them are only partially covered. Therefore, there is a great potential to improve overall code coverage by guiding symbolic execution towards covering more concrete branches.
 
-The folder [IDA](IDA/README.md) and [KLEE](klee) contains the codes to impliment our methods in Section 3 in our [paper](pre-print) in ICSE '24.
+The folder [IDA](IDA/README.md) and [KLEE](klee) contains the codes to impliment our methods in Section 3 in our [paper](pre-print.pdf) in ICSE '24.
 
 The artifacts of motivation and experimentation can be found [here](https://zenodo.org/records/10020236).
 
