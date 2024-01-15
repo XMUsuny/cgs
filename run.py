@@ -7,7 +7,7 @@ import subprocess
 
 # available searchers:
 # dfs bfs random-state random-path cgs
-# nurs:depth nurs:covnew nurs:icnt nurs:rp nurs:md2u nurs:qc 
+# nurs:depth nurs:covnew nurs:icnt nurs:cpicnt nurs:rp nurs:md2u nurs:qc 
 
 
 SOURCE_DIR = os.environ["SOURCE_DIR"]
