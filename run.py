@@ -82,7 +82,7 @@ def run(pgm_cfg, searcher):
 
 	# llvm bitcode file
 	if searcher == "cgs":
-		BC_PATH = SOURCE_DIR + "/new_benchmarks/" + pgm_cfg["name"] + ".bc"
+		BC_PATH = SOURCE_DIR + "/new_benchmark/" + pgm_cfg["name"] + ".bc"
 	else:
 		BC_PATH = pgm_cfg["llvm_bc"]
 	
