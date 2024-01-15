@@ -87,7 +87,7 @@ def run(pgm_cfg, searcher):
 		BC_PATH = pgm_cfg["llvm_bc"]
 	
 	# run in sandbox
-	SANDBOX_PROG_DIR = SANDBOX_DIR + "/sandbox-" + searcher + "-" + "pgm_cfg["name"]
+	SANDBOX_PROG_DIR = SANDBOX_DIR + "/sandbox-" + searcher + "-" + pgm_cfg["name"]
 	if (os.path.exists(SANDBOX_PROG_DIR)):
 		os.system("rm -rf " + SANDBOX_PROG_DIR)
 	os.system("mkdir -p " + SANDBOX_PROG_DIR)
