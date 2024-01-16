@@ -39,7 +39,7 @@ Last, use our klee to test:
 python3 run.py [program] run [searcher]
 ```
 
-Moreover, we provide an option `COV_STATS` in `run.py`. If it it set to `True` before running klee, we can collect the statistics about symbolic and concrete branching conditions and use our modified `klee-stats` to show the results:
+Moreover, we provide an option `COV_STATS` in `run.py`. If it is set to `True` before running klee, we can collect the statistics about symbolic and concrete branching conditions and use our modified `klee-stats` to show the results:
 
 ```
 ------------------------------------------------------------------------------------------------------------
