@@ -15,8 +15,7 @@ make
 In /build, file libidapass.so is built.
 
 ## Usage
-We can use clang "opt" command to use this pass
-:
+We can use clang "opt" command to use this pass:
 ```
 opt -load libidapass.so -ida <program.bc>
 ```

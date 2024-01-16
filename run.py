@@ -18,8 +18,7 @@ MAX_TIME = 3600 * 2
 OPTIMIZE = False
 
 
-# set COV_STATS = True, and use "random-path" on command line,
-# to get the coverage for symbolic/concrete branch.
+# set COV_STATS to True to get the coverage for symbolic/concrete branch.
 COV_STATS = False
 
 
