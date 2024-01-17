@@ -57,7 +57,7 @@ FCSC=Fully Covered Symbolic (Branching) Conditions
 FCCC=Fully Covered Concrete (Branching) Conditions
 ```
 
-PCB and FCB are non-zero only if we use cgs search strategy and set `COV_STATS` to `False`.
+PCB and FCB are non-zero only if we set `COV_STATS` to `False`.
  
 
 ## Cite our paper
